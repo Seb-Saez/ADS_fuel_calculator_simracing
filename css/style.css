@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --color-blanco: white;
+    --neon: #bfff00;
+    --azul-oscuro: #0a2839;
+    --rojo: #751240;
+    --gris: rgb(241, 241, 241)
+
+}
+
+body{
+    background-color: var(--neon);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+img{
+    margin:auto;
+    width: 30vw;
+}
+
+
+h1{
+    border-radius: 0.5rem;
+    text-align: center;
+    width: 50vw;
+    margin: 30px auto;
+    padding: 3px;
+    background-color: var(--azul-oscuro);
+    color: white;
+    
+}
+
+.container{
+    width: 50vw;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: auto;
+    gap: 30px;
+    place-items: center center;
+    background-color: var(--azul-oscuro);
+    border-radius: 0.5rem;
+}
+
+label{
+    border: 2px solid var(--neon);
+    border-radius: 0.5rem;
+    font-size: 20px;
+    width: 300px;
+    text-align: center;
+    padding: 5px 10px;
+    color: white;
+
+}
+
+input{
+    background-color: var(--gris);
+    color: var(--azul-oscuro);
+    font-size: 20px;
+    width: 150px;
+    padding: 5px 10px;
+    text-align: start;
+    border-radius: 0.5rem;
+}
+
+
+
+button.btn{
+    grid-column: span 2;
+    background-color: var(--neon);
+    color: black;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 20px;
+    font-weight: bold;
+    width: 300px;
+    text-align: center;
+    padding: 8px 10px;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+
+    
+
+}
+
+button.btn:hover{
+    transform: scale(1.2);
+
+}
+
+h2{
+    background-color: var(--gris);
+    color: black;
+    border-radius: 0.5rem;
+    width: 300px;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+div{
+    background-color: var(--rojo);
+    color: white;
+    font-size: 20px;
+    width: 150px;
+    padding: 5px 10px;
+    text-align: start;
+    border-radius: 0.5rem;
+    text-align: end;
+
+}

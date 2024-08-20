@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuel Calculator | By Sebastian Saez</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <img src="./img/Logo_ADS.png" alt="Pinga Simracing">
+    <h1>Fuel Calculator</h1>
+    <section class="container">
+        <label for="tiempo-carrera">Tiempo de carrera hh.mm</label>
+        <input type="number" name="tiempo-carrera" id="tiempo-carrera" placeholder="hh.mm" required>
+        <!-- <input type="number" name="tiempo-carrera-min" id="tiempo-carrera-min" placeholder="MM" required> -->
+        <label for="tiempo-vuelta">Tiempo por vuelta mm.ss</label>
+        <input type="number" name="tiempo-vuelta" id="tiempo-vuelta" placeholder="mm.ss" required>
+        <!-- <input type="number" name="tiempo-vuelta-seg" id="tiempo-vuelta-seg" placeholder="SS" required> -->
+        <label for="litros-vuelta">Consumo por vuelta</label>
+        <input type="number" name="litros-vuelta" id="litros-vuelta" min="0" step="0.01" placeholder="0.0" required>
+        <button class="btn" id="calcular" >Calcular</button>
+        <h2 class="titulo">Litros total + 3 L</h2>
+        <div class="resultado">0</div>
+
+    </section>
+    
+</body>
+<script src="./js/main.js"></script>
+</html>
